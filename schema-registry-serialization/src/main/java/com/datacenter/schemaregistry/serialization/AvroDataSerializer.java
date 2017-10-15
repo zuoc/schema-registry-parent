@@ -138,7 +138,7 @@ public class AvroDataSerializer extends AbstractAvroSerialization {
             return ((AvroData) data).getSchema();
         }
 
-        // 这里获取该模式主题下最新版本,当其他生产端产生新的模式,可能存在歧义,先屏蔽
+        /// 这里获取该模式主题下最新版本,当其他生产端产生新的模式,可能存在歧义,先屏蔽
 //        final SchemaValue schemaValue = schemaRegistry.get(SchemaKey.valueOf(subject));
 //        if (schemaValue != null) {
 //            return schemaValue.getSchema();
